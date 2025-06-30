@@ -29,27 +29,10 @@ public class OrderController {
 
     }
 
-    @GetMapping
-    public ResponseEntity<?> getOrdersByCurrentUser() {
-//        return ResponseEntity.ok(orderService.getOrdersByAuthenticatedUser());
-        return null;
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<?> getOrderById(@PathVariable int id) {
-//        return ResponseEntity.ok(orderService.getOrderById(id));
-        return null;
-    }
 
     @GetMapping("/account")
     public ResponseEntity<?> getOrdersByAccountId() {
         return ResponseEntity.ok(orderService.getOrdersByAccountId());
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteOrder(@PathVariable int id) {
-//        orderService.deleteOrder(id);
-//        return ResponseEntity.noContent().build();
-        return null;
-    }
 }
