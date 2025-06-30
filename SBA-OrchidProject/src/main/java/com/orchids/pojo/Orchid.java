@@ -20,7 +20,7 @@ public class Orchid {
     @Column(name = "orchid_name", length = 100, nullable = false,columnDefinition = "NVARCHAR(100)")
     private String orchidName;
 
-    @Column(name = "orchid_url", length = 255, nullable = false)
+    @Column(name = "orchid_url", columnDefinition = "NVARCHAR(MAX)", nullable = false)
     private String orchidUrl;
 
     @Column(name = "orchid_price", nullable = false)
